@@ -1,0 +1,95 @@
+tabs:
+  details:
+    display: Details
+    sections:
+      -
+        fields:
+          -
+            handle: logo
+            field:
+              container: assets
+              type: assets
+              display: Logo
+              width: 50
+          -
+            handle: salonrated_image
+            field:
+              container: assets
+              type: assets
+              display: 'Salonrated Image'
+              width: 50
+          -
+            handle: facebook_link
+            field:
+              type: text
+              display: 'Facebook Link'
+              width: 50
+          -
+            handle: instagram_link
+            field:
+              type: text
+              display: 'Instagram Link'
+              width: 50
+          -
+            handle: address
+            field:
+              type: textarea
+              display: Address
+          -
+            handle: opening_hours_line_one
+            field:
+              type: textarea
+              display: 'Opening Hours Line One'
+              width: 50
+          -
+            handle: opening_hours_line_two
+            field:
+              type: textarea
+              display: 'Opening Hours Line Two'
+              width: 50
+          -
+            handle: base_footer_text
+            field:
+              type: text
+              display: 'Base Footer Text'
+  api_keys:
+    display: 'API Keys'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: mapbox_key
+            field:
+              type: text
+              display: 'MapBox Key'
+  footer_fields:
+    display: 'Footer Fields'
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: opening_hours_heading
+            field:
+              type: text
+              display: 'Opening Hours Heading'
+              width: 50
+          -
+            handle: appointment_text
+            field:
+              type: text
+              display: 'Appointment Text'
+              width: 50
+          -
+            handle: footer_column_one_heading
+            field:
+              type: text
+              display: 'Footer Column One Heading'
+              width: 50
+          -
+            handle: footer_column_two_heading
+            field:
+              type: text
+              display: 'Footer Column Two Heading'
+              width: 50

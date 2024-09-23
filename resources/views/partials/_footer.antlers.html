@@ -1,0 +1,80 @@
+<footer class="footer pt-16 pb-8 relative">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 pb-5">
+        <div class="grid lg:grid-cols-3 gap-6">
+            <div class="lg:col-span-1">
+                {{ if kp_details:logo }}
+                    {{ kp_details:logo }}
+                        <a href="/" title="KP Beauty">
+                            <img class="w-[250px]" src="{{ glide:url fit='crop_focal' format='webp' }}" alt="{{ alt }}">
+                        </a>
+                    {{ /kp_details:logo }}
+                {{ /if }}
+
+                <div class="flex mt-4">
+                    <a href="{{ kp_details:facebook_link }}" target="_blank" title="KP Beauty Facebook">
+                        <i class="fa-brands fa-facebook-f bg-green hover:bg-light_green hover:text-black ease-in duration-300 text-white p-1 text-xl w-8 h-8 flex justify-center items-center"></i>
+                    </a>
+                    
+                    <a href="{{ kp_details:instagram_link }}" target="_blank" title="KP Beauty Instagram">
+                        <i class="fa-brands fa-instagram bg-green hover:bg-light_green hover:text-black ease-in duration-300 text-white p-1 text-xl w-8 h-8 flex justify-center items-center ms-1"></i>
+                    </a>
+                </div>
+
+                <div class="mt-5">
+                    {{ if kp_details:opening_hours_heading }}
+                        <h5 class="font-cormorant text-black text-1xl">{{ kp_details:opening_hours_heading }}</h5>
+                    {{ /if }}
+
+                    {{ if kp_details:appointment_text }}
+                        <h6 class=" text-black text-sm font-semibold mt-3">{{ kp_details:appointment_text }}</h6>
+                    {{ /if }}
+
+                    {{ if kp_details:opening_hours_line_one }}
+                        <h6 class="mt-3">{{ kp_details:opening_hours_line_one }}</h6>
+                    {{ /if }}
+
+                    {{ if kp_details:opening_hours_line_two  }}
+                        <h6 class="mt-1">{{ kp_details:opening_hours_line_two }}</h6>
+                    {{ /if }}
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                {{ if kp_details:footer_column_one_heading }}
+                    <h3 class="font-cormorant text-black text-2xl">{{ kp_details:footer_column_one_heading }}</h3>
+                {{ /if }}
+                <ul class="mt-4">
+                    {{ nav:footer_column_one }}
+                        <li class="mb-1 font-catamaran text-lg">
+                            <a class="text-black hover:text-green ease-in duration-300" title="{{ title }}" href="{{ url }}">{{ title }}</a>
+                        </li>
+                    {{ /nav:footer_column_one }}
+                </ul>
+            </div>
+
+            <div class="lg:col-span-1">
+                {{ if kp_details:footer_column_one_heading }}
+                    <h3 class="font-cormorant text-black text-2xl">{{ kp_details:footer_column_two_heading }}</h3>
+                {{ /if }}
+                <ul class="mt-4">
+                    {{ nav:footer_column_two }}
+                        <li class="mb-1 font-catamaran text-lg ">
+                            <a class="text-black hover:text-green ease-in duration-300"" title="{{ title }}" href="{{ url }}">{{ title }}</a>
+                        </li>
+                    {{ /nav:footer_column_two }}
+                </ul>
+            </div>
+
+            {{ kp_details:salonrated_image }}
+                <img class="absolute right-4 bottom-[100px]" src="{{ url }}" alt="{{ alt }}">
+            {{ /kp_details:salonrated_image }}
+        </div>
+    </div>
+    {{ if kp_details:base_footer_text }}
+        <section class="bg-white">
+            <div class="max-w-7xl mx-auto px-4 lg:px-8">
+                <div class="bg-white text-black text-center py-2">{{ kp_details:base_footer_text}} {{? echo date("Y"); ?}} | All Rights Reserved</div>
+            </div>
+        </section>
+    {{ /if }}
+</footer>

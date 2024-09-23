@@ -1,0 +1,18 @@
+title: 'KP Details'
+data:
+  logo:
+    - logos/kp-logo.png
+  salonrated_image:
+    - logos/salon-rated-1727105174.png
+  facebook_link: 'https://www.facebook.com/kpbeautyuk'
+  instagram_link: 'https://www.instagram.com/kpbeautyuk'
+  address: |-
+    95 High St, West Malling,<br>
+    ME19 6NA
+  opening_hours_line_one: 'Tues 10.00 -5.00 | Weds 10.00-5.00'
+  opening_hours_line_two: 'Thurs 9.00 - 4.30 | Fri 11.00 -5.00'
+  base_footer_text: KPBeauty©
+  opening_hours_heading: 'Opening Hours'
+  appointment_text: 'By Appointment Only'
+  footer_column_one_heading: Treatments
+  footer_column_two_heading: 'Useful Links'
