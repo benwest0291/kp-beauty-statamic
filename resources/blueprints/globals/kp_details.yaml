@@ -31,6 +31,11 @@ tabs:
               display: 'Instagram Link'
               width: 50
           -
+            handle: strapline
+            field:
+              type: text
+              display: Strapline
+          -
             handle: address
             field:
               type: textarea

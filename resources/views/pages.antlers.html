@@ -1,1 +1,12 @@
-
+{{ if blocks }}
+    {{ blocks }}
+        {{ if type == "masthead" }}
+            {{ partial:partials/blocks/masthead
+                masthead_background_image
+                heading="{ masthead_heading }"
+                button_text="{ masthead_button_text }"
+                button_url="{ masthead_button_url }"
+            }}
+        {{ /if }}
+    {{ /blocks }}
+{{ /if }}

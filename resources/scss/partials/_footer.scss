@@ -1,6 +1,6 @@
 .footer{
 
-    @media(min-width:$screen-xl) {
+    @media(min-width:$screen-lg) {
       &:after {
         content: '';
         display: block;
@@ -9,7 +9,7 @@
         right: -90px;
         top: -70px;
         width: 320px;
-        background-image: url('http://kp-beauty.test/assets/background-images-code/bg-image.png');
+        background-image: url('http://kp-beauty-statamic.test/assets/background-images-code/bg-image.png');
         background-repeat: no-repeat;
         background-size: contain;
       }

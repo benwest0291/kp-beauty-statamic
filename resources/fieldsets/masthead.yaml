@@ -1,0 +1,24 @@
+title: Masthead
+fields:
+  -
+    handle: background_image
+    field:
+      container: assets
+      type: assets
+      display: 'Background Image'
+  -
+    handle: heading
+    field:
+      type: textarea
+      display: Heading
+  -
+    handle: button_text
+    field:
+      type: text
+      display: 'Button Text'
+      width: 50
+  -
+    handle: button_url
+    field:
+      type: link
+      display: 'Button Url'

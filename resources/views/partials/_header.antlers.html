@@ -1,0 +1,57 @@
+<header class="header">
+    <div class="border-4 border-white">
+        <div class="bg-light_green py-1">
+            <div class="max-w-7xl mx-auto px-1 lg:px-8">
+                <div class="flex justify-between lg:items-center">
+                    {{ if kp_details:strapline }}
+                        <h4 class="lg:text-center font-cormorant text-xs lg:text-lg flex-1 mt-[5px]">{{ kp_details:strapline }}</h4>
+                    {{ /if }}
+
+                    <div class="flex justify-end">
+                        {{ if kp_details:facebook_link }}
+                            <a href="{{ kp_details:facebook_link }}" target="_blank" title="KP Beauty Facebook">
+                                <i class="fa-brands fa-facebook-f hover:text-green ease-in duration-300 text-white p-1 text-xl w-8 h-8 flex justify-center items-center"></i>
+                            </a>
+                        {{ /if }}
+                        
+                        {{ if kp_details:instagram_link }}
+                        <a href="{{ kp_details:instagram_link }}" target="_blank" title="KP Beauty Instagram">
+                            <i class="fa-brands fa-instagram hover:text-green ease-in duration-300 text-white p-1 text-xl w-8 h-8 flex justify-center items-center ms-1"></i>
+                        </a>
+                        {{ /if }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-4">
+        <div class="grid lg:grid-cols-2 gap-6">
+            <div class="lg:col-span-1">
+                {{ if kp_details:logo }}
+                    {{ kp_details:logo }}
+                        <a href="/" title="KP Beauty">
+                            <img class="w-[230px]" src="{{ glide:url fit='crop_focal' format='webp' }}" alt="{{ alt }}">
+                        </a>
+                    {{ /kp_details:logo }}
+                {{ /if }}
+            </div>
+
+            <div class="lg:col-span-1">
+                <nav class="mt-1">
+                    <ul class="flex items-center space-x-4">
+                        {{ nav:header_nav }}
+                            <li class="text-lg">
+                                <a class="text-black hover:text-green ease-in duration-300 
+                                    p-2 {{ last ? 'btn btn--green' : '' }}"  
+                                    href="{{ url }}">
+                                    {{ title }}
+                                </a>
+                            </li>
+                        {{ /nav:header_nav }}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

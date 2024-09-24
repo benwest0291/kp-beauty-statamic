@@ -1,0 +1,69 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: blocks
+            field:
+              type: replicator
+              display: Blocks
+              collapse: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    masthead:
+                      display: Masthead
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: masthead
+                          prefix: masthead_
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+              visibility: hidden
+  SEO:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO

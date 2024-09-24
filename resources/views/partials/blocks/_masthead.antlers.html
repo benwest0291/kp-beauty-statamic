@@ -1,0 +1,22 @@
+<section class="full-banner mb-12">
+    {{ if masthead_background_image}}
+        <div class="full-banner__cover before:border-4 before:border-white">
+            {{ masthead_background_image }}
+                <img src="{{ glide:url fit='crop_focal' format='webp' }}" alt="{{ alt }}" class="full-banner__image" />
+            {{ /masthead_background_image}}
+        </div>
+    {{ /if }}
+    
+    <div class="full-banner__heading max-w-7xl mx-auto px-4 lg:px-8">
+        {{ if heading }}
+            <h1 class="font-cormorant text-white text-2xl lg:text-4xl mt-20 lg:mt-28">{{ heading }}</h1>
+        {{ /if }}
+
+        {{ if button_text }}
+            <div class="mt-8">
+                <a title="{{ button_text}}" href="{{ button_url }}" class="btn btn--green">{{ button_text }}</a>
+            </div>
+        {{ /if }}
+    </div>
+</section>
+
