@@ -4,7 +4,7 @@
             <div class="max-w-7xl mx-auto px-1 lg:px-8">
                 <div class="flex justify-between lg:items-center">
                     {{ if kp_details:strapline }}
-                        <h4 class="lg:text-center font-cormorant text-xs lg:text-lg flex-1 mt-[5px]">{{ kp_details:strapline }}</h4>
+                        <h4 class="lg:text-center font-cormorant text-xs lg:text-lg flex-1 mt-[5px] lg:mt-0">{{ kp_details:strapline }}</h4>
                     {{ /if }}
 
                     <div class="flex justify-end">
@@ -15,9 +15,9 @@
                         {{ /if }}
                         
                         {{ if kp_details:instagram_link }}
-                        <a href="{{ kp_details:instagram_link }}" target="_blank" title="KP Beauty Instagram">
-                            <i class="fa-brands fa-instagram hover:text-green ease-in duration-300 text-white p-1 text-xl w-8 h-8 flex justify-center items-center ms-1"></i>
-                        </a>
+                            <a href="{{ kp_details:instagram_link }}" target="_blank" title="KP Beauty Instagram">
+                                <i class="fa-brands fa-instagram hover:text-green ease-in duration-300 text-white p-1 text-xl w-8 h-8 flex justify-center items-center ms-1"></i>
+                            </a>
                         {{ /if }}
                     </div>
                 </div>
@@ -26,7 +26,7 @@
     </div>
     
     <div class="max-w-7xl mx-auto px-4 lg:px-8 py-4">
-        <div class="grid lg:grid-cols-2 gap-6">
+        <div class="grid lg:grid-cols-3 gap-6">
             <div class="lg:col-span-1">
                 {{ if kp_details:logo }}
                     {{ kp_details:logo }}
@@ -37,9 +37,9 @@
                 {{ /if }}
             </div>
 
-            <div class="lg:col-span-1">
+            <div class="lg:col-span-2">
                 <nav class="mt-1">
-                    <ul class="flex items-center space-x-4">
+                    <ul class="flex items-center justify-end space-x-4">
                         {{ nav:header_nav }}
                             <li class="text-lg">
                                 <a class="text-black hover:text-green ease-in duration-300 

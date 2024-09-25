@@ -65,9 +65,11 @@
                 </ul>
             </div>
 
-            {{ kp_details:salonrated_image }}
-                <img class="absolute right-4 bottom-[100px]" src="{{ url }}" alt="{{ alt }}">
-            {{ /kp_details:salonrated_image }}
+            {{ if kp_details:salonrated_image }}
+                {{ kp_details:salonrated_image }}
+                    <img class="absolute right-4 bottom-[100px]" src="{{ url }}" alt="{{ alt }}">
+                {{ /kp_details:salonrated_image }}
+            {{ /if }}
         </div>
     </div>
     {{ if kp_details:base_footer_text }}
