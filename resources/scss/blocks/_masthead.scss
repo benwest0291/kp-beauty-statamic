@@ -1,9 +1,11 @@
+@use "../utilities" as local-utilities;
+
 .full-banner {
     position: relative;
     height: 400px;
     overflow: hidden;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: local-utilities.$screen-lg) {
         height: 540px; 
     }
 

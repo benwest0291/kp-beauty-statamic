@@ -1,0 +1,26 @@
+@use "../utilities" as local-utilities;
+
+.breadcrumbs {
+    li {
+        font-family: local-utilities.$font-family-catamaran;
+        font-weight: 600;
+        color: local-utilities.$white;
+
+        a {
+            padding-left: 5px;
+            font-size: local-utilities.$font-size-sm;
+            color: local-utilities.$white;
+        }
+
+        &:last-child {
+            color: local-utilities.$white;
+
+            a {
+                font-family: local-utilities.$font-family-catamaran;
+                font-size: local-utilities.$font-size-sm;
+                color: local-utilities.$white;
+            }
+        }
+    }
+    border-bottom: 1px solid local-utilities.$white;
+}

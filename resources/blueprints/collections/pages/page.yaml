@@ -35,6 +35,13 @@ tabs:
                         -
                           import: masthead
                           prefix: masthead_
+                    breadcrumbs:
+                      display: Breadcrumbs
+                      icon: setting-menu-horizontal-dots
+                      fields:
+                        -
+                          import: breadcrumbs
+                          prefix: breadcrumbs_
   sidebar:
     display: Sidebar
     sections:

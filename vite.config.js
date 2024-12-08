@@ -1,13 +1,13 @@
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
-// import vue2 from '@vitejs/plugin-vue2';
+import { defineConfig } from "vite";
+import laravel from "laravel-vite-plugin";
+import sass from "sass";
 
 export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/css/site.css',
-                'resources/js/site.js',
+                "resources/css/site.scss",
+                "resources/js/site.js",
 
                 // Control Panel assets.
                 // https://statamic.dev/extending/control-panel#adding-css-and-js-assets
@@ -16,6 +16,12 @@ export default defineConfig({
             ],
             refresh: true,
         }),
-        // vue2(),
     ],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                implementation: sass,
+            },
+        },
+    },
 });

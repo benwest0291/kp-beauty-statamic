@@ -1,6 +1,7 @@
-.footer{
+@use "../utilities" as local-utilities;
 
-    @media(min-width:$screen-lg) {
+.footer {
+    @media (min-width: local-utilities.$screen-lg) {
       &:after {
         content: '';
         display: block;
@@ -9,7 +10,7 @@
         right: -90px;
         top: -70px;
         width: 320px;
-        background-image: url('http://kp-beauty-statamic.test/assets/background-images-code/bg-image.png');
+        background-image: url('http://127.0.0.1:8000/assets/background-images-code/bg-image.png');
         background-repeat: no-repeat;
         background-size: contain;
       }

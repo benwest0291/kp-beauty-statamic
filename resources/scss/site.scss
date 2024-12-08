@@ -1,15 +1,16 @@
 /* Tailwind */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@use "tailwindcss/base";
+@use "tailwindcss/components";
+@use "tailwindcss/utilities" as tw-utilities;
 
 /* Globals */
-@import "./utilities";
-@import "./globals";
+@use "./utilities" as local-utilities;
+@use "./globals";
 
 /* Partials */
-@import "./partials/footer";
-@import "./partials/buttons";
+@use "./partials/footer";
+@use "./partials/buttons";
+@use "./partials/breadcrumbs";
 
 /* Blocks */
-@import "./blocks/masthead";
+@use "./blocks/masthead";

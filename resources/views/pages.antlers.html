@@ -7,6 +7,9 @@
                 button_text="{ masthead_button_text }"
                 button_url="{ masthead_button_url }"
             }}
+
+            {{ else if type == "breadcrumbs "}}
+                {{ partial:partials/blocks/breadcrumbs }}
         {{ /if }}
     {{ /blocks }}
 {{ /if }}

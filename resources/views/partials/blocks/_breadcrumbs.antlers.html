@@ -1,0 +1,11 @@
+<section class="breadcrumbs bg-green py-1 border-solid border-r-4 border-b-4 border-l-4 border-white border-t-0">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <ul class="flex flex-wrap">
+            {{ nav:breadcrumbs }}
+                <li class="me-2">{{ if is_current }}{{ /if }}>
+                    <a title="{{ title }}" href="{{ url }}">{{ title }}</a>
+                </li>
+            {{ /nav:breadcrumbs }}
+        </ul>
+    </div>
+</section>
