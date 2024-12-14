@@ -1,0 +1,52 @@
+title: Contact
+fields:
+  -
+    handle: contact_form_heading
+    field:
+      type: text
+      display: 'Contact Form Heading'
+  -
+    handle: contact_widget_one
+    field:
+      type: group
+      display: 'Contact Widget One'
+      fields:
+        -
+          handle: heading
+          field:
+            type: text
+            display: Heading
+        -
+          handle: button
+          field:
+            type: group
+            display: Button
+            fields:
+              -
+                handle: button_text
+                field:
+                  type: text
+                  display: 'Button Text'
+                  width: 50
+              -
+                handle: button_link
+                field:
+                  type: link
+                  display: 'button Link'
+                  width: 50
+  -
+    handle: contact_widget_two
+    field:
+      type: group
+      display: 'Contact Widget Two'
+      fields:
+        -
+          handle: address_heading
+          field:
+            type: text
+            display: 'Address Heading'
+        -
+          handle: social_heading
+          field:
+            type: text
+            display: 'Social Heading'

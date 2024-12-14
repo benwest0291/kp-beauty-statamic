@@ -3,13 +3,13 @@
 .breadcrumbs {
     li {
         font-family: local-utilities.$font-family-catamaran;
-        font-weight: 600;
-        color: local-utilities.$white;
+        font-weight: 400;
+        color: local-utilities.$black;
 
         a {
             padding-left: 5px;
             font-size: local-utilities.$font-size-sm;
-            color: local-utilities.$white;
+            color: local-utilities.$black;
         }
 
         &:last-child {
@@ -22,5 +22,4 @@
             }
         }
     }
-    border-bottom: 1px solid local-utilities.$white;
 }

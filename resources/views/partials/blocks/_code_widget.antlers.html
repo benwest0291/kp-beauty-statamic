@@ -1,0 +1,31 @@
+<section class="code-widget bg-other py-8 xl:py-14 relative" id="code-widget-section">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="border-4 border-white">
+            {{ code_widget_code }}
+        </div>
+    </div>
+</section>
+
+<script>
+  BookAppWidgetReady(function () {
+    BookApp.widget('#bookapp-reservation-widget', 'kpbeautyuk');
+
+    // Use MutationObserver to check when the widget content is fully loaded
+    const targetNode = document.querySelector('#bookapp-reservation-widget');
+    const observer = new MutationObserver((mutationsList, observer) => {
+        // Check if any child nodes are added
+        for (const mutation of mutationsList) {
+            if (mutation.type === 'childList' && targetNode.childElementCount > 0) {
+                // Widget is fully loaded, run your code
+                document.querySelector('.code-widget').classList.add('code-bg');
+                observer.disconnect(); // Stop observing
+                break;
+            }
+        }
+    });
+
+    // Start observing the target node for changes
+    observer.observe(targetNode, { childList: true, subtree: true });
+});
+</script>
+

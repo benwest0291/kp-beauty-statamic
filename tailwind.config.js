@@ -24,6 +24,7 @@ export default {
                 light_green: "#C1D3D3",
                 black: "#181818",
                 bg_white: "#FBF8F8",
+                other: "#EEEEEE"
             },
 
             fontSize: {

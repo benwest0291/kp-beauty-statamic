@@ -1,0 +1,16 @@
+@use "../utilities" as local-utilities;
+
+.bard{
+
+    h3{
+        font-size: local-utilities.$font-size-2xl;
+        font-family: local-utilities.$font-family-cormorant;
+        margin-bottom: 15px;
+    }
+
+    p{
+        font-size: local-utilities.$font-size-lg;
+        font-family: local-utilities.$font-family-catamaran;
+        margin-bottom: 15px;
+    }
+}

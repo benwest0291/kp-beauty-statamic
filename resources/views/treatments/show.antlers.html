@@ -1,0 +1,32 @@
+{{ if blocks }}
+    {{ blocks }}
+        {{ if type == "banner" }}
+
+            {{ partial:partials/blocks/banner
+                banner_background_image
+                heading="{ banner_heading }"
+                banner_button
+            }}
+
+        {{ elseif type == "breadcrumbs" }}
+
+            {{ partial:partials/blocks/breadcrumbs }}
+
+        {{ elseif type == "entires_grid" }}
+
+            {{ partial:partials/blocks/entries_grid
+                heading="{ entires_grid_heading }"
+                entries_grid_entries="{ entires_grid_entries }"
+            }}
+
+        {{ elseif type == "treatment_bars" }}
+
+            {{ partial:partials/blocks/treatments
+                heading="{ treatment_bars_heading }"
+                content="{ treatment_bars_content }"
+                treatments="{ treatment_bars_treatments }"
+            }}
+        
+        {{ /if }}
+    {{ /blocks }}
+{{ /if }}

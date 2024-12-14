@@ -1,0 +1,8 @@
+title: 'Body WYSIWYG'
+fields:
+  -
+    handle: body
+    field:
+      remove_empty_nodes: false
+      type: bard
+      display: Body

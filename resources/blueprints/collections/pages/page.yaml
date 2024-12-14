@@ -13,12 +13,6 @@ tabs:
               validate:
                 - required
           -
-            handle: template
-            field:
-              type: template
-              display: Template
-              localizable: true
-          -
             handle: blocks
             field:
               type: replicator
@@ -35,6 +29,13 @@ tabs:
                         -
                           import: masthead
                           prefix: masthead_
+                    banner:
+                      display: Banner
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: banner
+                          prefix: banner_
                     breadcrumbs:
                       display: Breadcrumbs
                       icon: setting-menu-horizontal-dots
@@ -42,6 +43,76 @@ tabs:
                         -
                           import: breadcrumbs
                           prefix: breadcrumbs_
+                    entires_grid:
+                      display: 'Entires Grid'
+                      icon: dashboard-layout
+                      fields:
+                        -
+                          import: entires_grid
+                          prefix: entires_grid_
+                    code_widget:
+                      display: 'Code Widget'
+                      icon: programming-script-code-brackets
+                      fields:
+                        -
+                          import: code_widget
+                          prefix: code_widget_
+                    body_wysiwyg:
+                      display: 'Body WYSIWYG'
+                      icon: text-formatting-initial-letter
+                      fields:
+                        -
+                          import: body_wysiwyg
+                          prefix: body_wysiwyg_
+                    centered_text:
+                      display: 'Centered Text'
+                      icon: text-formatting-wrap-around-bounding-box
+                      fields:
+                        -
+                          import: centered_text
+                          prefix: centered_text_
+                    frequently_asked_questions:
+                      display: 'Frequently Asked Questions'
+                      icon: alert-help-question
+                      fields:
+                        -
+                          import: frequently_asked_questions
+                          prefix: frequently_asked_questions_
+                    welcome:
+                      display: Welcome
+                      icon: text-formatting-input-signature
+                      fields:
+                        -
+                          import: welcome
+                          prefix: welcome_
+                    treatments_grid:
+                      display: 'Treatments Grid'
+                      icon: layout-grid-dots
+                      fields:
+                        -
+                          import: treatments_grid
+                          prefix: treatments_grid_
+                    reviews_swiper:
+                      display: 'Reviews Swiper'
+                      icon: text-formatting-quotation
+                      fields:
+                        -
+                          import: reviews_swiper
+                          prefix: reviews_swiper_
+                    reviews_index:
+                      display: 'Reviews Index'
+                      icon: text-formatting-quotation
+                      fields:
+                        -
+                          import: reviews_index
+                          prefix: reviews_index_
+                    contact:
+                      display: Contact
+                      icon: phone-contact-phonebook
+                      fields:
+                        -
+                          import: contact
+                          prefix: contact_
   sidebar:
     display: Sidebar
     sections:

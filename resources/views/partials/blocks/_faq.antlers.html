@@ -1,0 +1,35 @@
+<section class="faq py-5 xl:py-10 bg-other" x-data="{ faqItems: [] }">
+    <div class="w-full lg:max-w-4xl mx-auto px-4 lg:px-8">
+        {{ if heading }}
+            <h2 class="font-cormorant text-black text-2xl mb-8 font-bold text-center">{{ heading }}</h2>
+        {{ /if }}
+        {{ faq_bars }}
+            <div class="w-full">
+                <div class=" bg-white mb-2 lg:mb-3 px-2 py-2 lg:px-7 lg:py-3 w-full shadow" 
+                    x-data="{ faqOpen: {{ index == 0 ? 'true' : 'false' }} }"
+                    @click.outside="faqOpen = false">
+                    
+                    <div class="flex justify-between items-center cursor-pointer" 
+                        x-on:click.stop="faqOpen = !faqOpen">
+                        <h2 class="font-cormorant text-black font-bold text-lg lg:text-xl">{{ question }}</h2>
+                        <i class="fa-solid fa-chevron-right transition-transform duration-300 text-lg text-green" 
+                        x-bind:style="faqOpen ? 'transform: rotate(90deg)' : ''"></i>
+                    </div>
+                    
+                    <div x-show="faqOpen" 
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-95"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-95">
+
+                        <div class="text-lg text-black mt-4">
+                            {{ answer }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ /faq_bars }}
+    </div>
+</section>

@@ -1,0 +1,9 @@
+<section class="reviews-index py-5 xl:py-10 bg-other">
+    <div class="w-full lg:max-w-4xl mx-auto px-4 lg:px-8">
+        {{ collection:reviews }}
+            <div class="mb-2">
+                {{ partial:partials/blocks/components/review-card }}
+            </div>
+        {{ /collection:reviews }}
+    </div>
+</section>

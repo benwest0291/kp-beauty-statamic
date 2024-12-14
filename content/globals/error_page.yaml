@@ -1,0 +1,15 @@
+title: 'Error Page'
+data:
+  heading: '404'
+  content: 'Opps...., Sorry we could not find that page.'
+  buttons:
+    button_text_one: Homepage
+    button_link_one: 'entry::home'
+    button_text_two: 'Book Now'
+    button_link_two: 'entry::d3ae9c4e-a611-48a4-b980-355de6aa1d0a'
+  entries_heading: 'My Treatments'
+  pages_entries:
+    - cbf41a36-6fd3-4b5a-8017-480f533bb9af
+    - 28e68618-89a0-4f6b-be3f-08bcf8874444
+    - 6139e0cb-22e0-44ac-b68d-04e587b4d05c
+    - 656da8a3-6ae8-407c-bc1c-2d1927a5460b

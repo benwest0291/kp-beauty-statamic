@@ -1,1 +1,34 @@
-<p>404 Page not found.</p>
+<section class="error pt-10 pb-10 bg-white">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="text-center my-10 lg:my-16">
+            {{ if error_page:heading }}
+                <h1 class="font-cormorant text-black text-5xl lg:text-[150px] mb-8 font-bold">{{ error_page:heading }}</h1>
+            {{ /if }}
+
+            {{ if error_page:content  }}
+                <p class="text-lg text-black lg:mt-24">{{ error_page:content }}</p>
+            {{ /if }}
+            <div class="mt-4 flex justify-center">
+
+            {{ if error_page:buttons:button_text_one  && error_page:buttons:button_text_one  }}
+                <div class="me-1">
+                    <a class="btn btn--green" title="{{ error_page:buttons:button_text_one }}" href="{{ error_page:buttons:button_link_one }}">{{ error_page:buttons:button_text_one }}</a>
+                </div>
+            {{ /if }}
+
+            {{ if error_page:buttons:button_text_two  && error_page:buttons:button_text_two  }}
+                <div class="ms-1">
+                    <a class="btn btn--light-green" title="{{ error_page:buttons:button_text_two }}" href="{{ error_page:buttons:button_link_one }}">{{ error_page:buttons:button_text_two }}</a>
+                </div>
+            {{ /if }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial:partials/blocks/breadcrumbs }}
+
+{{ heading = error_page:entries_heading }}
+{{ entries_grid_entries = error_page:pages_entries }}
+
+{{ partial:partials/blocks/entries_grid }}

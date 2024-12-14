@@ -1,0 +1,20 @@
+title: 'Reviews Swiper'
+fields:
+  -
+    handle: background_image
+    field:
+      container: assets
+      type: assets
+      display: 'Background Image'
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: reviews_entires
+    field:
+      collections:
+        - reviews
+      type: entries
+      display: 'Reviews Entires'

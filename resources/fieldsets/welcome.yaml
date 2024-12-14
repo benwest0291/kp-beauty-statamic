@@ -1,0 +1,59 @@
+title: Welcome
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: subheading
+    field:
+      type: textarea
+      display: Subheading
+  -
+    handle: content
+    field:
+      remove_empty_nodes: false
+      type: bard
+      display: Content
+  -
+    handle: name
+    field:
+      type: text
+      display: Name
+  -
+    handle: button_one
+    field:
+      type: group
+      display: 'Button One'
+      fields:
+        -
+          handle: button_one_text
+          field:
+            type: text
+            display: 'Button One Text'
+            width: 50
+        -
+          handle: button_one_link
+          field:
+            type: link
+            display: 'Button One Link'
+            width: 50
+  -
+    handle: button_two
+    field:
+      type: group
+      display: 'Button Two'
+      fields:
+        -
+          handle: button_two_text
+          field:
+            type: text
+            display: 'Button Two Text'
+            width: 50
+        -
+          handle: button_two_link
+          field:
+            type: link
+            display: 'Button Two Link'
+            width: 50

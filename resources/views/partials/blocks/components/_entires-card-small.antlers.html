@@ -1,0 +1,16 @@
+<div class="relative border-2 border-white mb-3 lg:mb-0">
+    <a title="{{ title }}" href="{{ url }}">
+        {{ if featured_image }}
+            {{ featured_image }}
+            <img loading="lazy" src="{{ glide:url fit='crop_focal' format='webp' }}" alt="{{ alt }}" class="w-full aspect-square h-full lg:h-[380px] object-cover z-0">
+            {{ /featured_image }}
+            <div class="absolute inset-0 bg-gradient-to-t to-transparent from-black opacity-10"></div>
+        {{ /if }}
+
+        {{ if title }}
+            <div class="absolute bottom-0 w-auto p-3">
+                <h3 class="text-2xl font-cormorant text-white leading-none">{{ title }}</h3>
+            </div>
+        {{ /if }}
+    </a>
+</div>

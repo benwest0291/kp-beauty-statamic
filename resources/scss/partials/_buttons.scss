@@ -21,4 +21,16 @@
             color: local-utilities.$black !important;
         }
     }
+
+     &--light-green {
+        background-color: local-utilities.$light-green;
+        color: local-utilities.$black;
+        transition: 0.5s ease-in;
+
+        &:hover, &:focus {
+            background-color: local-utilities.$green;
+            transition: 0.5s ease-in;
+            color: local-utilities.$white !important;
+        }
+    }
 }

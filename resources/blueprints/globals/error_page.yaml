@@ -1,0 +1,59 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: heading
+            field:
+              type: text
+              display: Heading
+          -
+            handle: content
+            field:
+              type: textarea
+              display: Content
+          -
+            handle: buttons
+            field:
+              type: group
+              display: Buttons
+              fields:
+                -
+                  handle: button_text_one
+                  field:
+                    type: text
+                    display: 'Button Text One'
+                    width: 50
+                -
+                  handle: button_link_one
+                  field:
+                    type: link
+                    display: 'Button Link One'
+                    width: 50
+                -
+                  handle: button_text_two
+                  field:
+                    type: text
+                    display: 'Button Text Two'
+                    width: 50
+                -
+                  handle: button_link_two
+                  field:
+                    type: link
+                    display: 'Button Link Two'
+                    width: 50
+          -
+            handle: entries_heading
+            field:
+              type: text
+              display: 'Entries Heading'
+          -
+            handle: pages_entries
+            field:
+              collections:
+                - treatments
+                - pages
+              type: entries
+              display: 'Pages Entries'

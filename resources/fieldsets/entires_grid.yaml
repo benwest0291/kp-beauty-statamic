@@ -1,0 +1,16 @@
+title: 'Entires Grid'
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: entries
+    field:
+      max_items: 4
+      collections:
+        - pages
+        - treatments
+      type: entries
+      display: Entries

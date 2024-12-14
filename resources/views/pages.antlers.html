@@ -1,6 +1,8 @@
 {{ if blocks }}
     {{ blocks }}
+
         {{ if type == "masthead" }}
+
             {{ partial:partials/blocks/masthead
                 masthead_background_image
                 heading="{ masthead_heading }"
@@ -8,8 +10,91 @@
                 button_url="{ masthead_button_url }"
             }}
 
-            {{ else if type == "breadcrumbs "}}
-                {{ partial:partials/blocks/breadcrumbs }}
+        {{ elseif type == "banner" }}
+
+            {{ partial:partials/blocks/banner
+                banner_background_image
+                heading="{ banner_heading }"
+                banner_button
+            }}
+
+        {{ elseif type == "breadcrumbs" }}
+
+            {{ partial:partials/blocks/breadcrumbs }}
+
+        {{ elseif type == "entires_grid" }}
+
+            {{ partial:partials/blocks/entries_grid
+                heading="{ entires_grid_heading }"
+                entries_grid_entries="{ entires_grid_entries }"
+            }}
+
+        {{ elseif type == "code_widget" }}
+
+            {{ partial:partials/blocks/code_widget
+                code_widget_code
+            }}
+
+        {{ elseif type == "body_wysiwyg" }}
+
+            {{ partial:partials/blocks/body_wysiwyg
+                body_wysiwyg_body
+            }}
+
+        {{ elseif type == "centered_text" }}
+
+            {{ partial:partials/blocks/centered_text
+                centered_text_heading
+                centered_text_content
+            }}
+
+        {{ elseif type == "frequently_asked_questions" }}
+
+            {{ partial:partials/blocks/faq
+                heading="{ frequently_asked_questions_heading }"
+                faq_bars="{ frequently_asked_questions_bars }"
+            }}
+
+        {{ elseif type == "welcome" }}
+
+            {{ partial:partials/blocks/welcome
+                welcome_heading
+                welcome_subheading
+                welcome_content
+                welcome_name
+                welcome_button_one
+                welcome_button_two
+            }}
+
+        {{ elseif type == "treatments_grid" }}
+
+            {{ partial:partials/blocks/treatments_grid
+                heading="{ treatments_grid_heading }"
+                content="{ treatments_grid_content }"
+                treatment_entires="{ treatments_grid_treatment_entires }"
+                treatments_grid_button
+            }}
+
+        {{ elseif type == "reviews_swiper" }}
+
+            {{ partial:partials/blocks/reviews_swiper
+                bg_image="{ reviews_swiper_background_image }"
+                heading="{ reviews_swiper_heading }"
+                reviews="{ reviews_swiper_reviews_entires }"
+            }}
+
+        {{ elseif type == "reviews_index" }}
+
+            {{ partial:partials/blocks/reviews_index }}
+
+        {{ elseif type == "contact" }}
+
+            {{ partial:partials/blocks/contact 
+                contact_form_heading="{ contact_contact_form_heading }"
+                contact_contact_widget_one
+                contact_contact_widget_two
+            }}
+
         {{ /if }}
     {{ /blocks }}
 {{ /if }}

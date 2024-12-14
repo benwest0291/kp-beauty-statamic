@@ -1,0 +1,32 @@
+title: 'Frequently Asked Questions'
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: bars
+    field:
+      type: replicator
+      display: Bars
+      collapse: true
+      sets:
+        single_bar:
+          display: 'Single bar'
+          icon: alert-help-question
+          sets:
+            bar:
+              display: Bar
+              icon: alert-help-question
+              fields:
+                -
+                  handle: question
+                  field:
+                    type: textarea
+                    display: Question
+                -
+                  handle: answer
+                  field:
+                    type: textarea
+                    display: Answer

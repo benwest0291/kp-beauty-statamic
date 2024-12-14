@@ -10,7 +10,7 @@
         {{ seo_pro:meta }}
 
         <!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/background-images-code/favicon.png">
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Cormorant&family=Catamaran:wght@400;700&display=swap" rel="stylesheet">
@@ -26,16 +26,21 @@
 
         <!-- Alpine.js -->
         <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-        <script src="/vendor/statamic/frontend/js/helpers.js"></script>
+
+        <!-- Swpier JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Mapbox -->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+
+         {{ captcha:head }}
     </head>
-    <body class="font-catamaran bg-bg_white">
+    <body class="font-catamaran bg-bg_white z-100">
        {{ partial:header }}
 
        {{ template_content }}
 
        {{ partial:footer }}
-
-        <!-- Swpier JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </body>
 </html>

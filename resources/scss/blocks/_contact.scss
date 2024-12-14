@@ -1,0 +1,19 @@
+@use "../utilities" as local-utilities;
+
+.contact {
+    position: relative;
+    overflow: hidden;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 220px;
+        right: -165px;
+        top: -80px;
+        width: 320px;
+        background-image: url('http://127.0.0.1:8000/assets/background-images-code/bg-image.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index:  1;
+    }
+}

@@ -6,3 +6,5 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+    treatments:
+      after_save: continue_editing

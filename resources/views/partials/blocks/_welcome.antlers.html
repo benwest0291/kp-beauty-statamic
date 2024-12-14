@@ -1,0 +1,46 @@
+ <section class="welcome-bg py-8 bg-white">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="lg:col-span-2 z-100">
+            {{ if welcome_heading  }}
+                <h2 class="font-cormorant text-black text-2xl mb-1 font-bold">{{ welcome_heading }}</h2>
+            {{ /if }}
+            
+            {{ if welcome_subheading }}
+                <h3 class="font-cormorant text-black text-xl mb-1 font-bold">
+                    {{ welcome_subheading }}
+                </h3>
+            {{ /if }}
+
+            {{ if welcome_content }}
+                <div class="bard my-4">
+                    {{ welcome_content }}
+                </div>
+            {{ /if }}
+
+            {{ if welcome_name }}
+                <p class="font-cormorant text-green text-1xl">{{ welcome_name }}</p>
+            {{ /if }}
+
+            
+            <div class="flex mt-4">
+                {{ if welcome_button_one:button_one_text && welcome_button_one:button_one_link }}
+                    <div class="me-1">
+                        <a title="{{ welcome_button_one:button_one_text }}" class="btn btn--green" href="{{ welcome_button_one:button_one_link }}">{{ welcome_button_one:button_one_text }}</a>
+                    </div>
+                {{ /if }}
+
+                {{ if welcome_button_two:button_two_text && welcome_button_two:button_two_text }}
+                    <div class="ms-1">
+                        <a title="{{ welcome_button_two:button_two_text }}" class="btn btn--light-green" href="{{ welcome_button_two:button_two_link }}">{{ welcome_button_two:button_two_text }}</a>
+                    </div>
+                {{ /if }}
+            </div>
+
+             
+        </div>
+        
+        <div class="hidden lg:block">
+        <!--Empty div for image-->
+        </div>
+    </div>
+</section>

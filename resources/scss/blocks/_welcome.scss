@@ -1,0 +1,22 @@
+@use "../utilities" as local-utilities;
+
+.welcome-bg {
+    position: relative;
+    z-index: 100;
+
+    @media (min-width: local-utilities.$screen-lg) {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 850px;
+            right: -400px;
+            bottom: 0;
+            width: 820px;
+            background-image: url('http://127.0.0.1:8000/assets/background-images-code/eucalyptus-bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: -1;
+        }
+    }
+}

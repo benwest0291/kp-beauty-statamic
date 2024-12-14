@@ -71,12 +71,13 @@
                 {{ /kp_details:salonrated_image }}
             {{ /if }}
         </div>
+         <p class="mt-7"><a class="text-bolder" target="_blank" title="Ben West Linkedin" href="https://www.linkedin.com/in/ben-west-020691/">Website By Ben West 🤓</a></p>
     </div>
-    {{ if kp_details:base_footer_text }}
-        <section class="bg-white">
-            <div class="max-w-7xl mx-auto px-4 lg:px-8">
-                <div class="bg-white text-black text-center py-2">{{ kp_details:base_footer_text}} {{? echo date("Y"); ?}} | All Rights Reserved</div>
-            </div>
-        </section>
-    {{ /if }}
 </footer>
+{{ if kp_details:base_footer_text }}
+    <section class="bg-white mt-8">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="bg-white text-black text-center py-2">{{ kp_details:base_footer_text}} {{? echo date("Y"); ?}} | All Rights Reserved</div>
+        </div>
+    </section>
+{{ /if }}

@@ -1,0 +1,91 @@
+title: Treatment
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: blocks
+            field:
+              type: replicator
+              display: Blocks
+              collapse: true
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    banner:
+                      display: Banner
+                      icon: media-image-picture-orientation
+                      fields:
+                        -
+                          import: banner
+                          prefix: banner_
+                    breadcrumbs:
+                      display: Breadcrumbs
+                      icon: setting-menu-horizontal-dots
+                      fields:
+                        -
+                          import: breadcrumbs
+                          prefix: breadcrumbs_
+                    entires_grid:
+                      display: 'Entries Grid'
+                      icon: dashboard-layout
+                      fields:
+                        -
+                          import: entires_grid
+                          prefix: entires_grid_
+                    treatment_bars:
+                      display: 'Treatment Bars'
+                      icon: money-cash-bill
+                      fields:
+                        -
+                          import: treatment_bars
+                          prefix: treatment_bars_
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: featured_image
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              type: assets
+              display: 'Featured Image'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - treatments
+              max_items: 1
+              listable: false
+              localizable: true
+  SEO:
+    display: SEO
+    sections:
+      -
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO

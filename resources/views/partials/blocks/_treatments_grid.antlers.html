@@ -1,0 +1,24 @@
+<section class="treatments-grid py-5 xl:py-10 bg-other">
+    <div class="w-full lg:max-w-4xl mx-auto px-4 lg:px-8">
+        {{ if heading }}
+            <h2 class="font-cormorant text-black text-2xl mb-2 font-bold text-center">{{ heading }}</h2> 
+        {{ /if }}
+
+        {{ if content }}
+            <p class="text-black text-center text-lg">{{ content }}</p>
+        {{ /if }}
+
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            {{ treatment_entires}}
+                {{ partial:partials/blocks/components/entires-card-small }}
+            {{ /treatment_entires }}
+        </div>
+        
+        {{ if treatments_grid_button:button_text && treatments_grid_button:button_link  }}
+            <div class="flex justify-center mt-2 lg:mt-6">
+                <a class="btn btn--green"" href="{{ treatments_grid_button:button_link }}">{{ treatments_grid_button:button_text }}</a>
+            </div>
+        {{ /if }}
+    </div>
+</section>
+

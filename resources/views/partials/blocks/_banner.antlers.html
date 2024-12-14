@@ -1,0 +1,21 @@
+<section class="banner py-2 border-4 border-white z-100">
+    {{ if banner_background_image }}
+        <div class="banner__cover">
+            {{ banner_background_image }}
+                <img src="{{ glide:url fit='crop_focal' format='webp' }}" alt="{{ alt }}" class="banner__image" />
+            {{ /banner_background_image}}
+        </div>
+    {{ /if }}
+    
+    <div class="banner__heading max-w-7xl mx-auto px-4 lg:px-8">
+        {{ if heading }}
+            <h1 class="font-cormorant text-white text-center text-2xl lg:text-4xl mt-20 lg:mt-28">{{ heading }}</h1>
+        {{ /if }}
+
+        {{ if banner_button:button_text }}
+            <div class="mt-8 flex justify-center">
+                <a title="{{ banner_button:button_text }}" href="{{ banner_button:button_link }}" class="btn btn--green">{{ banner_button:button_text  }}</a>
+            </div>
+        {{ /if }}
+    </div>
+</section>

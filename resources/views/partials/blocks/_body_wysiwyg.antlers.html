@@ -1,0 +1,13 @@
+ <section class="py-8">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        {{ if body_wysiwyg_heading  }}
+            <h2 class="text-2xl font-semibold font-bebus text-blue mb-4 leading-snug">{{ body_wysiwyg_heading }}</h2>
+        {{ /if }}
+
+        {{ if body_wysiwyg_body }}
+            <div class="bard">
+                {{ body_wysiwyg_body }}
+            </div>
+        {{ /if}}
+    </div>
+</section>

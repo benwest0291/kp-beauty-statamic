@@ -1,5 +1,5 @@
 title: Treatments
-template: default
+template: treatments/show
 layout: layout
 mount: 067773a1-186d-4c30-b7dd-a27edfbdbd65
 revisions: false
@@ -13,3 +13,5 @@ preview_targets:
     label: Entry
     url: '{permalink}'
     refresh: true
+structure:
+  root: false

@@ -1,0 +1,54 @@
+title: 'Treatment Bars'
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: content
+    field:
+      type: textarea
+      display: Content
+  -
+    handle: treatments
+    field:
+      collapse: true
+      type: replicator
+      display: Treatments
+      sets:
+        single_treatment:
+          display: 'Single Treatment'
+          icon: money-cash-bill
+          sets:
+            bar:
+              display: Bar
+              icon: money-cash-bill
+              fields:
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  handle: show_over_18
+                  field:
+                    type: toggle
+                    display: 'Show Over 18'
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description
+                -
+                  handle: price
+                  field:
+                    type: text
+                    display: Price
+                    width: 50
+                -
+                  handle: time
+                  field:
+                    type: text
+                    display: Time
+                    width: 50

@@ -1,3 +1,5 @@
+@use "./utilities" as local-utilities;
+
 html, body {
     overflow-x: hidden;
 }
@@ -6,3 +8,26 @@ body{
     max-width: 100vw;
     overflow-x: hidden;
 }
+
+/* Error page background */
+
+.error {
+    position: relative;
+    border: 4px solid white; // Add border directly to the .error element
+
+    @media (min-width: local-utilities.$screen-lg) {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 500px;
+        left: -100px;
+        bottom: 0;
+        width: 420px;
+        background-image: url('http://127.0.0.1:8000/assets/background-images-code/eucalyptus-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+}
+

@@ -1,0 +1,8 @@
+title: 'Code Widget'
+fields:
+  -
+    handle: code
+    field:
+      mode: markdown
+      type: code
+      display: Code
